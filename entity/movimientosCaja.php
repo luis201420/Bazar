@@ -5,12 +5,14 @@ class MovimientosCaja{
 	private $motivo;
 	private $monto;
 	private $tipo;
+	private $fecha;
 
 
 	function __construct() {
 		$this->motivo=null;
 		$this->monto=null;
 		$this->tipo=null;
+		$this->fecha=null;
 	}
 
 	public function setId($new_id){
@@ -33,6 +35,11 @@ class MovimientosCaja{
 		return $this;
 	}
 
+	public function setFecha($f){
+		$this->fecha=$f;
+		return $this;
+	}
+
 	public function getId(){
 		return $this->id;
 	}
@@ -47,6 +54,10 @@ class MovimientosCaja{
 
 	public function getTipo(){
 		return $this->tipo;
+	}
+
+	public function getFecha(){
+		return $this->fecha;
 	}
 }
 

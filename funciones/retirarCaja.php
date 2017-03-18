@@ -14,6 +14,7 @@ $managerRegistro=new managerMovimientosCaja();
 $movimiento= $managerRegistro->newMovimiento();
 $movimiento->setMotivo($motivo);
 $movimiento->setMonto($monto);
+$movimiento->setFecha(date("Y/m/d"));
 
 $status=0;
 

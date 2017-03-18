@@ -30,6 +30,7 @@ class repositoryMovimientosCaja{
                 $movimiento->setMotivo($row[1]);
                 $movimiento->setMonto($row[2]);
                 $movimiento->setTipo($row[3]);
+                $movimiento->setFecha($row[4]);
                 $movimientos[]=$movimiento;
             }
             return $movimientos;
@@ -45,8 +46,9 @@ class repositoryMovimientosCaja{
         $motivo=$nuevo->getMotivo();
         $monto=$nuevo->getMonto();
         $tipo=$nuevo->getTipo();
+        $fecha=$nuevo->getFecha();
 
-        $sql="insert into movimientoscaja(Motivo,Monto,Tipo) values('$motivo','$monto','$tipo');";
+        $sql="insert into movimientoscaja(Motivo,Monto,Tipo,Fecha) values('$motivo','$monto','$tipo','$fecha');";
 
         $result=$this->objcon->cSimple($sql);
         

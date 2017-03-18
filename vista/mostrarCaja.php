@@ -127,7 +127,7 @@
 		    			</tr>
 		    			<tr>
 		    				<td><label>Monto a retirar (S/.) :</label></td>
-		    				<td><input class="form-control" type="text"  style="margin-left:30%;width:40%;text-align:center;" id="monto_retirar" name="monto_ret" value="0"></td>
+		    				<td><input class="form-control" type="text"  style="margin-left:30%;width:40%;text-align:center;" id="monto_retirar" name="monto_ret" value="-"></td>
 		    			</tr>
 		    			<tr>
 		    				<td><label>Monto restante (S/.) :</label></td>
